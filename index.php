@@ -5,4 +5,6 @@
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
+	<div id="content">
+	</div>
 </body>

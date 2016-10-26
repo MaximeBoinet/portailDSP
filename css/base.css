@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
-	min-height: 860px;
-	background-image: url("picmg/60282080_print.jpg");
+	background: url("../picmg/60282080_print.jpg") no-repeat center fixed;
+	background-size: cover;
+	margin: auto;
 }
