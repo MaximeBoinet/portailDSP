@@ -25,6 +25,20 @@
 					<div id="dspico" class="ico trois"><img class="img-responsive" src="picmg/DSPnettoyageLOGO.PNG"></div>
 				</div>
 			</div>
+			<div class="row">
+				<div id="info" class="col-md-2 col-md-offset-5 info">
+	        		<div class="aideservice">
+	        			<h2>DSP Services</h2><p>Le services d'aide à domicile: Nous sommes un services agrée qualité par l'Etat qui propose des services aux personnes dans tous les ages de la vie</p>
+	        		</div>
+	        		<div class="aidenettoyage">
+	        			<h2>DSP Nettoyage</h2><p>Nous vous proposons une panoplie diversifiée de prestations de nettoyage en tout genre.</p>
+	        		</div>
+	        		<div class="aideinfo">
+	        			<h2>DSP info</h2><p>Développement de site web, application et sécurite.</p>
+	        		</div>
+	        	</div>
+	        	
+	        </div>
 	        <div class="row">
 	        	<div id="loader-wrapper">
 	            
@@ -36,19 +50,45 @@
 	        </div>
         </div>
 	</div> 
+	<footer class="tm-footer">
+                <p class="tm-copyright-text">Copyright © 2016 DSP</p>
+    </footer>
         <script src="js/bootstrap.min.js"></script>     
         <script src="js/jquery-3.1.1.min.js"></script>     
         <script>
 
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip(); 
+            $('.info,.aideservice,.aidenettoyage,.aideinfo').hide();
+            $('.un').hover(function(){
+            	$('.info').show();
+            	$('.aidenettoyage').show(); },
+            	function(){
+                	$('.info').hide(); 
+                	$('.aidenettoyage').hide();});
+    	
+	        $('.deux').hover(function(){
+	        	$('.info').show();
+	        	$('.aideservice').show(); },
+	        	function(){
+	            	$('.info').hide();
+	            	$('.aideservice').hide(); });
+    	
+	        $('.trois').hover(function(){
+	        	$('.info').show();
+	        	$('.aideinfo').show(); },
+	        	function(){
+	            	$('.info').hide();
+	            	$('.aideinfo').hide(); });
+            
         });
         
        	 $(window).on('load', function() {
                 $('body').addClass('loaded');
+                
+                
                            
-            });
-
+         });
+       	
         </script>
         
 </body>

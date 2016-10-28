@@ -8,10 +8,10 @@ body {
 
 #content {
 	margin: auto;
-	animation: expend 1.5s 1 0.5s;
-    -moz-animation: expend 1.5s 1 0.5s;
-    -webkit-animation: expend 1.5s 1 0.5s;
-    -o-animation: expend 1.5s 1 0.5s;
+	animation: expend 2s 1 0.5s;
+    -moz-animation: expend 2s 1 0.5s;
+    -webkit-animation: expend 2s 1 0.5s;
+    -o-animation: expend 2s 1 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -26,6 +26,13 @@ body {
     animation-fill-mode: forwards;
 }
 
+#info {
+	background-color: rgba(239, 241, 237, 0.7);
+	-moz-box-shadow: 0px 0px 15px 3px #656565;
+	-webkit-box-shadow: 0px 0px 15px 3px #656565;
+	-o-box-shadow: 0px 0px 15px 3px #656565;
+	box-shadow: 0px 0px 15px 3px #000000;
+}
 
 .ico {
 	padding: 5%;
@@ -114,6 +121,65 @@ border-top-color: #f9c922; -webkit-animation: spin 1.5s linear infinite; /* Chro
 	-webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
 	transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */  
 	transition: all 0.3s 1s ease-out;
+}
+
+.tm-social-link {
+	background-color: rgba(255,255,255,0.40);
+    color: black;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.tm-social-link:last-child { margin-right: 0; }
+
+.tm-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.tm-footer {
+    width: 100%;
+    color: white;
+    z-index: 1001;
+    padding: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.tm-copyright-text { 
+	margin-top: 20px; 
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.cd-full-width {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 @keyframes fadein {
