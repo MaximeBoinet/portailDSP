@@ -6,6 +6,15 @@ body {
 	min-height: 100%;
 }
 
+#content {
+	margin: auto;
+	animation: expend 1.5s 1 0.5s;
+    -moz-animation: expend 1.5s 1 0.5s;
+    -webkit-animation: expend 1.5s 1 0.5s;
+    -o-animation: expend 1.5s 1 0.5s;
+    animation-fill-mode: forwards;
+}
+
 #dspico {
 	width: 50%;
 	opacity: 0;
@@ -19,17 +28,20 @@ body {
 
 
 .ico {
-	border-radius: 100px;
-	background-color: rgba(107, 214, 78, 0.6);
+	padding: 5%;
+	border-radius: 30%;
+	background-color: rgba(109, 255, 130, 0.6);
   	-webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
+    box-shadow: 0 0 65px #c9e1cd inset, 0 0 20px #c9e1cd inset, 0 0 15px #c9e1cd;
 }
 
 .ico:hover {
+	padding: 5%;
 	transform: scale(1.35);
-	background-color: rgba(107, 214, 78, 0.9);
+	background-color: rgba(201, 225, 205, 0.9);
 	box-shadow: 0 0 65px #09ff2b inset, 0 0 20px #09ff2b inset, 0 0 15px #09ff2b;
 	
 	-webkit-transition: all 0.25s ease-in;
@@ -37,6 +49,7 @@ body {
     -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
 }
+
 
 #loader-wrapper { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000; }
 #loader { display: block; position: relative; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #3498db; -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -133,5 +146,54 @@ border-top-color: #f9c922; -webkit-animation: spin 1.5s linear infinite; /* Chro
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes expend {
+    from {
+    	margin-top: 100%;
+        width: 0%;
+        height: 0%;
+    }
+    to {
+    	margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@-moz-keyframes expend {
+    from {
+    	margin-top: 100%;
+        width: 0%;
+        height: 0%;
+    }
+    to {
+   		margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@-webkit-keyframes expend {
+    from {
+    	margin-top: 100%;
+        width: 0%;
+        height: 0%;
+    }
+    to {
+    	margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@-o-keyframes expend {
+    from {
+    	margin-top: 100%;
+        width: 0%;
+        height: 0%;
+    }
+    to {
+    	margin-top: 0;
+        width: 100%;
+        height: 100%;
     }
 }
