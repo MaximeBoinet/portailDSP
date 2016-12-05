@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@CHARSET "ISO-8859-1";
 
 body {
 	background: url("../picmg/60282080_print.jpg") no-repeat center fixed;
@@ -37,7 +37,7 @@ body {
 .ico {
 	padding: 5%;
 	border-radius: 30%;
-	background-color: rgba(109, 255, 130, 0.6);
+	background-color: rgba(195, 195, 195, 0.6);
   	-webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
@@ -49,7 +49,7 @@ body {
 	padding: 5%;
 	transform: scale(1.35);
 	background-color: rgba(201, 225, 205, 0.9);
-	box-shadow: 0 0 65px #09ff2b inset, 0 0 20px #09ff2b inset, 0 0 15px #09ff2b;
+	box-shadow: 0 0 65px #958f94 inset, 0 0 20px #958f94 inset, 0 0 15px #958f94;
 	
 	-webkit-transition: all 0.25s ease-in;
     -moz-transition: all 0.25s ease-in;
